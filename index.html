@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>All About Gamsa</title>
+<script>
+function isPrime() {
+	// alert("Hello World")
+
+	/* Prime number can only be divisible by 1 and itself
+	/ p = {2, 3, 5, 11...... 101...}
+	/ !p= {3, 6, 9, 15, .... 225...}
+
+	/ x=49
+	/ let i be a possible divisor, starting from 2
+	/ you check 2, 2+1, 2+2...., x-1
+	
+	12 % 7 = 5
+	11 % 2 =1
+	*/
+	var x = 211;
+	var prime = true;
+
+	for(var i=2; i < x; i++) {
+		if (x % i == 0) {
+			prime = false;
+			break;
+		}
+
+		else {
+			continue;
+		}
+	}
+	// 4 + 5 = 0
+	//4 + "hello" = "4 hello";
+	alert(x + " is prime: " + prime);
+
+}
+
+function greatestPrime() {
+	var x = 1000000000;
+}
+</script>
+</head>
+<body>
+<h1>Hello World! My first webpage!</h1>
+<h2>My Hobbies</h2>
+<ul>
+<li>Sleep</li>
+<li>Playing Video Gamsa</li>
+<ol type="I">
+	<li>All Day</li>
+	<li>Call of Duty</li>
+	<li>Apex Legends</li>
+</ol>
+<li>Watch movies</li>
+<li>Play Basketball</li>
+<li>Beat Ben in Smash</li>
+<ol type=I>
+	<li>My Bowser is insane</li>
+	<li>Hero slaps Ben around</li>
+</ol>
+</ul>
+<hr>
+<b>My Favorite Website:</b> <a href="https://www.w3schools.com">Code</a>
+<br>
+<i>My Favorite Pokemon:</i>
+<img src="Images/Tyflosion.JPG"/>
+<br>
+<u>My Social Media</u>
+<br>
+<a href="https://www.instagram.com/gamsa_kwon/" target="_blank"></a>
+<img src="Images/instagram.png"
+<br>
+<br>
+<table border="1">
+	<tr>
+		<th>Family</th>
+		<th>Mochi</th>
+</tr>
+<tr>
+	<td><img src="Images/Fam.jpg"/></td>
+	<td><img src="Images/Mochi.jpg"</td>
+</tr>
+<tr>
+	<td rowspan="2">The Goat</td>
+	<td colspan="3">SpeedWagon</td>
+</tr>
+<tr>
+	<td colspan="3"><img src="Images/speedwagon.jpg"/></td>
+</tr>
+</table>
+<br>
+<button onclick= "isPrime()">
+	Check Prime
+</button>
+</body>
+</html>
